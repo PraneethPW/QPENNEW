@@ -1,0 +1,5 @@
+సిబ్బంది	T-POS	SERVICE#GENERAL
+సహాయకంగా	O	NIL
+ఉన్నారు	O	NIL
+.	O	NIL
+

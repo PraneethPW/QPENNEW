@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QPEN Studio Workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body class="app-body">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand sidebar-brand" href="/">
+        <div class="brand-mark">Q</div>
+        <span>QPEN Studio</span>
+      </a>
+
+      <div class="sidebar-card">
+        <span class="sidebar-label">Detected Datasets</span>
+        <div id="datasetList" class="pill-list"></div>
+      </div>
+
+      <div class="sidebar-card">
+        <span class="sidebar-label">Examples</span>
+        <div id="exampleList" class="example-list"></div>
+      </div>
+    </aside>
+
+    <main class="workspace">
+      <section class="workspace-header">
+        <div>
+          <div class="eyebrow">Main Page</div>
+          <h1>Checkpoint-backed multilingual inference</h1>
+          <p>Choose a locally available model, enter a sentence, and review token-level BIOES predictions from the backend.</p>
+        </div>
+        <div class="header-chip">Local API Connected</div>
+      </section>
+
+      <section class="console-card">
+        <div class="form-grid">
+          <label class="field">
+            <span>Model</span>
+            <select id="modelSelect"></select>
+          </label>
+          <label class="field">
+            <span>Language</span>
+            <input id="languageDisplay" type="text" readonly />
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Input text</span>
+          <textarea id="inputText" rows="5" placeholder="Enter a review sentence to generate BIOES sentiment tags..."></textarea>
+        </label>
+
+        <div class="action-row">
+          <button id="predictButton" class="primary-button">Run Inference</button>
+          <span id="statusText" class="muted-text">Ready.</span>
+        </div>
+      </section>
+
+      <section class="results-layout">
+        <article class="results-card">
+          <div class="results-header">
+            <h2>Prediction Output</h2>
+            <span class="status-pill subtle">BIOES</span>
+          </div>
+          <div id="resultEmpty" class="empty-state">Run inference to see token-level predictions.</div>
+          <div id="tokenTableWrapper" class="table-shell hidden">
+            <table class="token-table">
+              <thead>
+                <tr>
+                  <th>Token</th>
+                  <th>Predicted Tag</th>
+                </tr>
+              </thead>
+              <tbody id="tokenTableBody"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="results-card">
+          <div class="results-header">
+            <h2>Model Details</h2>
+            <span class="status-pill subtle">Runtime</span>
+          </div>
+          <dl id="modelMeta" class="meta-grid"></dl>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

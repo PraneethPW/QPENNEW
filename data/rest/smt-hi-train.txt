@@ -1,0 +1,11 @@
+खाना	T-POS	FOOD#QUALITY
+बहुत	O	NIL
+स्वादिष्ट	O	NIL
+था	O	NIL
+.	O	NIL
+
+सेवा	T-NEG	SERVICE#GENERAL
+धीमी	O	NIL
+थी	O	NIL
+.	O	NIL
+

@@ -1,0 +1,11 @@
+ఆహారం	T-POS	FOOD#QUALITY
+చాలా	O	NIL
+రుచిగా	O	NIL
+ఉంది	O	NIL
+.	O	NIL
+
+సేవ	T-NEG	SERVICE#GENERAL
+నెమ్మదిగా	O	NIL
+ఉంది	O	NIL
+.	O	NIL
+

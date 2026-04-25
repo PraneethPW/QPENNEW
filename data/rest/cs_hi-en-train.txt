@@ -1,0 +1,10 @@
+खाना	T-POS	FOOD#QUALITY
+was	O	NIL
+amazing	O	NIL
+.	O	NIL
+
+सेवा	T-NEG	SERVICE#GENERAL
+was	O	NIL
+slow	O	NIL
+.	O	NIL
+

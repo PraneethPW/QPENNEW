@@ -1,0 +1,11 @@
+डेज़र्ट	T-POS	FOOD#QUALITY
+ताज़ा	O	NIL
+था	O	NIL
+.	O	NIL
+
+संगीत	T-NEG	AMBIENCE#GENERAL
+बहुत	O	NIL
+तेज़	O	NIL
+था	O	NIL
+.	O	NIL
+

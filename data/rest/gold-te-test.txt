@@ -1,0 +1,11 @@
+డెజర్ట్	T-POS	FOOD#QUALITY
+తాజాగా	O	NIL
+ఉంది	O	NIL
+.	O	NIL
+
+సంగీతం	T-NEG	AMBIENCE#GENERAL
+బాగా	O	NIL
+పెద్దగా	O	NIL
+ఉంది	O	NIL
+.	O	NIL
+

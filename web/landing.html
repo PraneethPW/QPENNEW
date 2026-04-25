@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QPEN Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body class="landing-body">
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">Q</div>
+      <span>QPEN Studio</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#platform">Platform</a>
+      <a href="#languages">Languages</a>
+      <a href="/app" class="nav-cta">Open Workspace</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-shell">
+      <div class="hero-copy">
+        <div class="eyebrow">Multilingual Aspect-Based Sentiment Analysis</div>
+        <h1>Professional BIOES tagging for multilingual ABSA workflows.</h1>
+        <p class="hero-text">
+          QPEN Studio wraps the research pipeline in a practical interface for cross-language model discovery,
+          token-level tagging, and checkpoint-backed inference for multilingual restaurant review analysis.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-button" href="/app">Launch Main App</a>
+          <a class="secondary-button" href="#platform">See Capabilities</a>
+        </div>
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <strong>8</strong>
+            <span>Dataset languages detected</span>
+          </div>
+          <div class="metric-card">
+            <strong>BIOES</strong>
+            <span>Structured token tagging output</span>
+          </div>
+          <div class="metric-card">
+            <strong>CPU Ready</strong>
+            <span>Runs in this local workspace</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="hero-panel-header">
+          <span>Inference Preview</span>
+          <span class="status-pill">Connected</span>
+        </div>
+        <div class="code-card">
+          <div class="code-row"><span class="token">service</span><span class="value">S-POS</span></div>
+          <div class="code-row"><span class="token">was</span><span class="value">O</span></div>
+          <div class="code-row"><span class="token">slow</span><span class="value">E-NEG</span></div>
+          <div class="code-row"><span class="token">.</span><span class="value">O</span></div>
+        </div>
+        <div class="hero-grid">
+          <div class="mini-tile">
+            <span>Models</span>
+            <strong>Checkpoint-aware</strong>
+          </div>
+          <div class="mini-tile">
+            <span>Pipeline</span>
+            <strong>Frontend + Backend</strong>
+          </div>
+          <div class="mini-tile">
+            <span>Export</span>
+            <strong>BIOES aligned</strong>
+          </div>
+          <div class="mini-tile">
+            <span>UX</span>
+            <strong>Research polished</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section" id="platform">
+      <div class="section-heading">
+        <span class="eyebrow">Platform</span>
+        <h2>Built for demos, validation, and model-facing review.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Model Workspace</h3>
+          <p>Pick an available checkpoint, run inference, and inspect token-level BIOES labels sentence by sentence.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Dataset Awareness</h3>
+          <p>The app surfaces detected multilingual datasets so the UI stays grounded in the repository’s actual language coverage.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Operational Simplicity</h3>
+          <p>The backend is lightweight, local-first, and designed to run without adding a full web framework dependency chain.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="language-section" id="languages">
+      <div class="section-heading">
+        <span class="eyebrow">Languages</span>
+        <h2>Original multilingual coverage plus Hindi and Telugu.</h2>
+      </div>
+      <div class="language-ribbon">
+        <span>English</span>
+        <span>Spanish</span>
+        <span>French</span>
+        <span>Dutch</span>
+        <span>Russian</span>
+        <span>Turkish</span>
+        <span>Hindi</span>
+        <span>Telugu</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

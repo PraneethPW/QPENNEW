@@ -1,0 +1,5 @@
+स्टाफ	T-POS	SERVICE#GENERAL
+मददगार	O	NIL
+था	O	NIL
+.	O	NIL
+
